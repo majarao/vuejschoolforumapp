@@ -1,19 +1,19 @@
 <template>
-  <thread-list :threads="threads"/>
+  <category-list :categories="categories"/>
 </template>
 
 <script>
-import ThreadList from '@/components/ThreadList.vue'
+import CategoryList from '@/components/CategoriesList.vue'
 import sourceData from '@/data.json'
 
 export default {
   data () {
     return {
-      threads: sourceData.threads
+      categories: sourceData.categories
     }
   },
   components: {
-    ThreadList
+    CategoryList
   }
 }
 </script>
